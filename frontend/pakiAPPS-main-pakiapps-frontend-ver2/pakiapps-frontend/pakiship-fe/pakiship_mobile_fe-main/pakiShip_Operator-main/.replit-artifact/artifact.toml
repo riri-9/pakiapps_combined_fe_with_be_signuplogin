@@ -1,0 +1,28 @@
+kind = "mobile"
+kind = "mobile"
+previewPath = "/"
+title = "PakiShip Operator"
+version = "1.0.0"
+id = "artifacts/pakiship-operator"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 25089
+
+[services.development]
+run = "pnpm --filter @workspace/pakiship-operator run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/pakiship-operator", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/pakiship-operator", "run", "serve" ]
+
+[services.env]
+PORT = "25089"
+BASE_PATH = "/"

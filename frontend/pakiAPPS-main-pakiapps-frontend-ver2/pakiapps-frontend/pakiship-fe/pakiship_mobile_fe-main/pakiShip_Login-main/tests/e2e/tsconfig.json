@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["ES2017"],
+    "module": "CommonJS",
+    "target": "ES2017",
+    "types": ["jest", "detox"],
+    "noEmit": true,
+    "baseUrl": "../..",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["./**/*.ts"]
+}

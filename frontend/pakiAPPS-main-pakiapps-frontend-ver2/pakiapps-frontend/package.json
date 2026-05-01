@@ -1,0 +1,20 @@
+{
+  "name": "pakiAPPS-main-pakiapps-fe",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install --prefix pakipark-fe/pakipark-fe && npm run setup --prefix pakiship-fe/pakiship_mobile_fe-main",
+    "setup:pakipark": "npm install --prefix pakipark-fe/pakipark-fe",
+    "setup:pakiship": "npm run setup --prefix pakiship-fe/pakiship_mobile_fe-main",
+    "start": "npm run start --prefix pakiship-fe/pakiship_mobile_fe-main",
+    "start:pakipark": "npm run start --prefix pakipark-fe/pakipark-fe",
+    "start:pakiship": "npm run start --prefix pakiship-fe/pakiship_mobile_fe-main"
+  },
+  "dependencies": {
+    "expo": "^55.0.17"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.10",
+    "typescript": "~5.9.2"
+  }
+}

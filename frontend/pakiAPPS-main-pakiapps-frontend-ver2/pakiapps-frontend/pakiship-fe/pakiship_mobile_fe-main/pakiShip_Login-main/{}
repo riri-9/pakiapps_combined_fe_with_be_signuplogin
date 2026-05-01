@@ -1,0 +1,22 @@
+[1] [eval]:1
+[1] setTimeout(()=, 5000)
+[1]             ^
+[1] Parenthesized expression cannot be empty
+[1] 
+[1] SyntaxError: Unexpected token ')'
+[1]     at makeContextifyScript (node:internal/vm:185:14)
+[1]     at compileScript (node:internal/process/execution:383:10)
+[1]     at evalTypeScript (node:internal/process/execution:256:22)
+[1]     at node:internal/main/eval_string:74:3
+[1] 
+[1] Node.js v22.18.0
+[1] node -e "setTimeout(()=, 5000)" && npm run lt exited with code 1
+[0] env: load .env
+[0] env: export RN_PUBLIC_APP_NAME RN_PUBLIC_APP_ENV RN_PUBLIC_API_BASE_URL EXPO_PACKAGER_PROXY_URL EXPO_PUBLIC_API_URL
+[0] Starting project at C:\Users\Bopbopgurl\Downloads\customerrepo-main\customerrepo-main
+[0] › Port 8081 is being used by another process
+[0] Input is required, but 'npx expo' is in non-interactive mode.
+[0] Required input:
+[0] > Use port 8082 instead?
+[0] › Skipping dev server
+[0] npx expo start exited with code 1

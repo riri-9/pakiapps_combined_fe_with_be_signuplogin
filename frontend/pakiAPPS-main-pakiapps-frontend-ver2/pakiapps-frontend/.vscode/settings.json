@@ -1,0 +1,4 @@
+{
+  "typescript.tsdk": "pakipark-fe/pakipark-fe/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
